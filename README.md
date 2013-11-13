@@ -1,7 +1,16 @@
 # NServiceBus.ActiveMQ.Samples
 ----------
 
-This repository contains the Samples for the ActiveMQ transport. The samples include needed references for ActiveMQ. The endpoints are configured to use ActiveMQ as its transport. The app.config provides the necessary connection information needed to communicate to the ActiveMQ server.
+This repository contains the Samples for the ActiveMQ transport. The samples include needed references for ActiveMQ. The endpoints are configured to use ActiveMQ as its transport. For example:
+
+
+The app.config provides the necessary connection information needed to communicate to the ActiveMQ server. For example:
+
+````xml
+<connectionStrings>
+  <add name="NServiceBus/Transport" connectionString="ServerUrl=activemq:tcp://localhost:61616" />
+</connectionStrings>
+````
  
 ##VideoStore.ActiveMQ
 
