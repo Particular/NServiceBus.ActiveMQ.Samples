@@ -2,7 +2,9 @@
 ----------
 
 This repository contains the Samples for the ActiveMQ transport. The samples include needed references for ActiveMQ. The endpoints are configured to use ActiveMQ as its transport. For example:
-
+````c#
+  public class EndpointConfig : IConfigureThisEndpoint, AsA_Server, UsingTransport<ActiveMQ> { }
+````
 
 The app.config provides the necessary connection information needed to communicate to the ActiveMQ server. For example:
 
